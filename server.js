@@ -35,6 +35,13 @@ app.get('/',(req,res) => {
     pageText:'This Is Home Page',
   });
 });
+app.get('/projects',(req,res) =>{
+  res.render('projects.hbs',{
+    pageTitle:'Projects Page',
+    pageHeader:'Projects',
+    pageText:'This Is will be give sample projects !',
+  });
+});
 app.get('/about',(req,res) => {
   res.render('about.hbs',{
     pageTitle:'About Page',
